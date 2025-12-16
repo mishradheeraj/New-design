@@ -1,0 +1,324 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== VARIABLES ===== */
+:root {
+    --border-color: #7c7878;
+    --dark-bg: #28282a;
+    --light-bg: #ffffff;
+    --primary-gray:#acadaf;
+    --primary-border:#707070;
+    --info-light:#AAAAAA;
+    
+}
+
+/* ===== LAYOUT ===== */
+.wrapper {
+    position: relative;
+}
+
+.component {
+    width: 1800px;
+    height: 280px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-conainer {
+    /* border: 3px solid var(--dark-bg); */
+    border-radius: 0.2rem;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* ===== BOXES ===== */
+/* .container-boxes-first,
+.container-boxes-second,
+.container-boxes-third {
+    border: 1px solid var(--border-color);
+} */
+
+.container-boxes-first,
+.container-boxes-third {
+    width: 120px;
+    background-color: var(--dark-bg);
+    position: relative;
+}
+
+.container-boxes-second {
+    width: calc(100% - 240px);
+    border: 4px solid var(--dark-bg);
+    padding: 10px 20px;
+}
+
+/* ===== COMMON SHAPES ===== */
+.container-boxes-first span,
+.container-boxes-third span {
+    display: inline-block;
+    background-color: var(--light-bg);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* ===== INDIVIDUAL SHAPES ===== */
+.c_top {
+    width: 50px;
+    height: 20px;
+    border-radius: 1.5rem;
+    top: 10px;
+}
+
+.c_circle,
+.c_circle_2 {
+    width: 20px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.c_circle {
+    top: 14%;
+}
+
+.c_circle_2 {
+    bottom: 14%;
+}
+
+.c_round {
+    width: 13px;
+    height: 25px;
+    border-radius: 0.3rem;
+    top: 30%;
+}
+
+.c_bottom {
+    width: 30px;
+    height: 20px;
+    border-radius: 0.5rem 0.5rem 0 0;
+    bottom: 0;
+}
+
+.c_radio{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top: 30%;
+    background-color: var(--primary-gray) !important;
+    border: 2px solid var(--primary-border);
+}
+
+.c_input{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-border);
+}
+
+.c_radio .c_input{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*======= container-boxes-second ======== */
+.device-type{
+    width: calc(100%);
+    height: 100%;
+    display: flex;
+}
+
+.cloud{
+    width: calc(70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.module-view{
+    width: calc(100% - 70px);
+    /* border: 1px solid #000;  */
+    padding-right: 44px;
+    padding-left: 11px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.device-type ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.device-type ul li {
+    position: relative;
+    padding-right: 24px;
+    font-size: 11px;
+    line-height: 14px;
+}
+
+.device-type ul li::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: var(--dark-bg); 
+    border-radius: 50%;
+}
+
+/* ======== module-view ========= */
+
+span.line-1 {
+    display: block;           
+    position: relative;
+    height: 18px;           
+    width: 100%;              
+    background-image: url("./assest/images/Ellipse 62.png");
+    background-repeat: repeat-x; 
+    background-size: 18px 18px;  
+}
+
+
+.parent {
+    overflow: hidden;
+}
+.chip_left {
+    width: 68%;
+    float: left;
+    
+}
+
+.chip_right {
+    width: 28%;
+    float: right;
+    padding-left: 120px;
+}
+
+.another_parent {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative; 
+    
+}
+
+.dotted_left {
+    width: 24%;
+}
+
+.dotted_right {
+    position: absolute; 
+    right: 0;
+    top: 0;
+    width: 76%;
+    min-height: 140px;
+    /* border: 1px solid #000; */
+    padding: 10px;
+}
+
+
+/* ==== circuit container code starts ==== */
+.circut_container {
+    width: 280px;
+    height: 120px;
+    /* border: 1px solid #000; */
+    background-color: var(--info-light);
+    border: 2px solid var(--primary-border);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.inner_boxes {
+    width: calc(95% / 4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    width: 100%;  
+    height: 60px;
+    background: var(--dark-bg);
+}
+
+.most-top-rectangle {
+    position: absolute;
+    top: -10px;
+    left: 50%;              
+    transform: translateX(-50%);
+    width: 40%;
+    height: 12px;
+    background: var(--light-bg);
+}
+
+.top-rectangle {
+    position: absolute;
+    top: -8px;
+    left: 50%;              
+    transform: translateX(-50%);
+    width: 60%;
+    height: 12px;
+    background: var(--dark-bg);
+}
+
+
+.left-square, .right-square {
+    position: absolute;
+    top: -4px;      
+    width: 8px;
+    height: 6px;
+}
+.left-square {
+    left: 0;
+    background: #c6c632;
+}
+.right-square {
+    right: 0;
+    background: #126934;
+}
+
+/* ===== bars ===== */
+.left-bar, .right-bar {
+    position: absolute;
+    top: 20px; 
+    width: 5px;
+    height: 15px;
+    background: white;
+}
+.left-bar {
+    left: 5px;
+}
+.right-bar {
+    right: 5px;
+}
+
+/* ==== grill ==== */
+.grill {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    width: 35px; 
+    height: 15px;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.grill div {
+    width: 3px;
+    height: 15px;
+    background: gray;
+}
