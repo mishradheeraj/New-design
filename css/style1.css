@@ -56,6 +56,8 @@
     border: 4px solid var(--dark-bg);
     overflow-x: auto;
     overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;          /* add: smooth horizontal scroll on touch */
+    overscroll-behavior-x: contain;             /* add: prevent nested scroll chaining */
 }
 
 /* ===== COMMON SHAPES ===== */
@@ -131,11 +133,21 @@
 
 /* ===== HUAWEI Code Starts====== */
 .huwaei_container{
-    width: calc(100%);
-    display: flex;
+    /* width: calc(100%); */                     /* remove: this forces container to fill parent */
+    /* min-width: 1400px; */                     /* remove: rigid minimum hurts responsiveness */
+    width: max-content;                          /* add: size to intrinsic content width */
+    display: inline-flex;                        /* change: allow parent to scroll horizontally */
     justify-content: center;
     height: 100%;
-     min-width: 1400px;
+    flex-wrap: nowrap;                           /* add: keep children in one horizontal row */
+}
+
+/* Ensure children do not shrink so overflow can happen */
+.huwaei_boxes_first,
+.huwaei_boxes_second,
+.huwaei_boxes_third{
+    flex: 0 0 auto;                              /* add: prevent shrinking inside flex container */
+    /* width: calc(45%); / calc(10%); / calc(45%) remain as-is if present */
 }
 .huwaei_boxes_first{
     width: calc(45%);
