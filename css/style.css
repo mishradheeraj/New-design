@@ -194,6 +194,7 @@
     flex-direction: column;
     gap: 12px;
     width: max-content;  /* max-content added  */
+
     /* padding: 0px 10px;; */
 }
 
