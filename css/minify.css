@@ -778,8 +778,109 @@ span.line-1 {
 
 /* ========= another container css starts ========= */
 
+.layout_container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.internal_layouts_second{
+  position: relative;
+}
 
+.internal_layouts_first,
+.internal_layouts_second,
+.internal_layouts_third {
+  flex: 0 0 477px;    
+  height: 100%;
+  border: 1px solid var(--dark-bg);
+}
+ 
+.internal_layouts_second, .internal_layouts_third{
+    flex: 0 0 340px;   
+}
+.internal_layouts_first {
+  border-right:none;
+  border-top: none;
+  border-bottom: none;
+}
 
+.internal_layouts_second,
+.internal_layouts_third {
+  border-top: none;
+  border-bottom: none;
+}
+.internal_layouts_first,
+.internal_layouts_third {
+  position: relative;
+}
+
+.ecclipse_60{
+  top: 30px;
+  left: 30px;
+  position: absolute;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  border: 3px solid var(--dark-bg);
+  background-color: var(--bg-rectangle);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.vertical_line{
+     width: 55.512207px;
+    height: 105px;
+    border-right: 2px solid var(--dark-bg);
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    left: -2px;
+
+}
+.huwei_title_vel{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: 700;
+    background-color: var(--prios-gry);
+    border: 5px solid var(--dark-bg);
+    border-radius: 50%;
+    position: absolute;
+    top: 20%;
+    left: 4px;
+    transform: translateY(-20%);
+}
+  .il_circle_sec{
+    position: absolute;
+    width: 226px;
+    height: 153.35354614257812px;
+    top: 10px;
+    right: 0;
+    padding: 5px;
+  }
+  .white_square{
+    width: 35px;
+    height: 86px;
+    background-color: var(--light-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 96px;
+  }
+  .white_square span{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: var(--bg-rectangle);
+    border: 2.81px solid #000000
+  }
 /* ==== code ends ==== */
 
 /* ==== code-ends ==== */
