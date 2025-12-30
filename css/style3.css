@@ -30,7 +30,6 @@
 .component {
     width: 100%;
     /* width: 1800px; */
-    height: 280px;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -49,7 +48,8 @@
     border-radius: 0.2rem;
     display: flex;
     justify-content: space-between;
-    height: 100%;
+    /* height: 100%; */
+     height: 280px;
 }
 
 /* ===== BOXES ===== */
@@ -317,7 +317,7 @@ span.line-1 {
 
 .rectangle_boxes {
     flex: 0 0 calc(16.66% - 7px); 
-    height: 54px;
+    height: 68px;
     /* border: 1px solid var(--dark-bg); */
     box-sizing: border-box;
 }
@@ -537,14 +537,14 @@ span.line-1 {
 .chip2 {
   position: relative;
   width: 68px;         
-  height: 48px;      
+  height: 66px;      
   margin: auto;
 }
 
 /* ===== TOP DETAILS ===== */
 .chip2-rec1 {
   position: absolute;
-  top: 3px;
+  top: 5px;
   right: 22px;
   width: 25px;
   height: 8px;
@@ -553,7 +553,7 @@ span.line-1 {
 
 .chip2-rec2 {
   position: absolute;
-  top: 8px;
+  top: 10px;
   right: 18px;
   width: 32px;
   height: 10px;
@@ -571,7 +571,7 @@ span.line-1 {
 /* ===== LEDS ===== */
 .led {
   position: absolute;
-  top: 10px;
+  top: 12px;
   width: 9px;
   height: 6px;
   border: 1px solid #fff;
@@ -591,8 +591,8 @@ span.line-1 {
 
 /* ===== PORT ===== */
 .chip-port {
-  width: 54px;
-  height: 34px;
+  width: 60px;
+  height: 50px;
   background: #191718;
   display: flex;
   align-items: flex-end;
@@ -608,15 +608,15 @@ span.line-1 {
 
 .chip-pins span {
   width: 2px;
-  height: 13px;
+  height: 15px;
   background: #888;
 }
 
 #chip-port1,
 #chip-port12 {
-  width: 4px;
-  height: 13px;
+  width: 4px;   
+  height: 16px;
   background: #fff;
   position: relative;
-  top: -6px;
+  top: -12px;
 }

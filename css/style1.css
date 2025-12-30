@@ -19,17 +19,50 @@
     
 }
 
-.white_balls{
-    background-color: var(--light-bg) !important;
+span.line-2 {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    background-color: var(--dark-bg);
+    border-radius: 50%;
+    vertical-align: middle;
+    line-height: 1;
+    margin-right: -4px;
 }
-/* ===== LAYOUT ===== */
-/* .wrapper {
-    position: relative;
-} */
+
+.p_0 {
+    padding: 0 !important;
+}
+
+.P_1 {
+    padding: 9px 30px 0 45px;
+}
+
+.p_2 {
+    padding: 0 25px 0 80px;
+}
+
+.h_boxes_model {
+    display: inline-block;
+    height: 50px;
+    width: 100%;
+    background-color: var(--light-bg);
+}
+
+.p_3 {
+    padding: 0 25px;
+}
+
+
+.c_title {
+    font-size: 1.2rem;
+    color: var(--dark-bg);
+    margin: 10px 0;
+    font-weight: 600;
+}
 
 .component {
     width: 100%;
-    height: 280px;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -41,6 +74,7 @@
     display: flex;
     justify-content: space-between;
     height: 100%;
+    height: 280px;
 }
 
 /* ===== BOXES ===== */
@@ -52,12 +86,12 @@
 }
 
 .container-boxes-second {
-    width: calc(100% - 170px);
+    /* width: calc(100% - 170px); */
     border: 4px solid var(--dark-bg);
     overflow-x: auto;
     overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;          /* add: smooth horizontal scroll on touch */
-    overscroll-behavior-x: contain;             /* add: prevent nested scroll chaining */
+    -webkit-overflow-scrolling: touch;          
+    overscroll-behavior-x: contain;             
 }
 
 /* ===== COMMON SHAPES ===== */
@@ -131,27 +165,23 @@
 }
 
 
+
 /* ===== HUAWEI Code Starts====== */
-.huwaei_container{
-    /* width: calc(100%); */                     /* remove: this forces container to fill parent */
-    /* min-width: 1400px; */                     /* remove: rigid minimum hurts responsiveness */
-    width: max-content;                          /* add: size to intrinsic content width */
-    display: inline-flex;                        /* change: allow parent to scroll horizontally */
+.huwaei_container{                
+    width: max-content;                         
+    display: flex;                        
     justify-content: center;
     height: 100%;
-    flex-wrap: nowrap;                           /* add: keep children in one horizontal row */
+    flex-wrap: nowrap;                           
 }
 
 /* Ensure children do not shrink so overflow can happen */
 .huwaei_boxes_first,
 .huwaei_boxes_second,
 .huwaei_boxes_third{
-    flex: 0 0 auto;                              /* add: prevent shrinking inside flex container */
-    /* width: calc(45%); / calc(10%); / calc(45%) remain as-is if present */
+    flex: 0 0 auto;                             
 }
 .huwaei_boxes_first{
-    width: calc(45%);
-    /* border: 1px solid var(--dark-bg); */
     display: flex;
     overflow: hidden;
 }
@@ -161,16 +191,12 @@
 }
 
 .huwaei_boxes_second{
-    width: calc(10%);
+    width: calc(160px);
     border: 1px solid var(--dark-bg);
 }
 .huwaei_boxes_third{
-    width: calc(45%);
-    /* border: 1px solid var(--dark-bg); */
     display: flex;
 }
-
-
 
 /* ====== gradient line ======= */
 .gradient_line {
@@ -211,10 +237,9 @@
 }
 
 /* ==== code ends ==== */
-
-
 .huawei_internal{
-    width: calc(100% / 2);
+    width: 300px;
+    min-width: 300px;
     border: 1px solid var(--dark-bg);
     display: flex;
     position: relative;
@@ -250,16 +275,16 @@
 }
 
 .huawey_left_box{
-     position: absolute;
+    position: absolute;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
     height: calc(75%);
-    width: calc(100% - 47px);
+    /* width: calc(100% - 47px); */
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    /* border: 1px solid var(--border-color); */
+    overflow: hidden;
     z-index: -1;
 }
 
@@ -315,10 +340,13 @@ span.hwawey_shadow::after {
 
 
 .huwei_internal{
-    width: calc(100% / 3);
+    /* width: calc(100% / 3); */
+    width: 275px;
+    min-width: 275px;
     border: 1px solid var(--dark-bg);
     position: relative;
 }
+
 .huwei_title{
     width: 50px;
     height: 50px;
@@ -357,17 +385,6 @@ span.hwawey_shadow::after {
     transform: translateY(-50%);
 }
 
-
-
-span.line-2{
-    display: inline-block;
-    height:14px;
-    width:14px;
-    background-color: var(--dark-bg);
-    border-radius: 50%;
-     vertical-align: middle; 
-    line-height: 1;         
-}
 .box_red{
     position: absolute;
     top: 50%;
