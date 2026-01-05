@@ -45,7 +45,7 @@ body{
   display: flex;
   height: 100%;
   flex-wrap: nowrap;
-  width: 100%;
+  /* width: 100%; */
 }
 .huwaei_boxes_first,
 .huwaei_boxes_third {
@@ -54,6 +54,7 @@ body{
 .huwaei_boxes_first:last-child {
   padding: 10px;
 }
+
 .huwaei_boxes_second {
   width: 160px;
   border: 1px solid var(--dark-bg);
@@ -103,7 +104,7 @@ body{
   transform: translateY(-5%);
 }
 .huawei_internal {
-  width: 360px;
+  width: 335px;
   border: 1px solid var(--dark-bg);
   display: flex;
   position: relative;
@@ -887,7 +888,7 @@ span.line-1 {
 
 .rectangle {
   width: 494px;
-  height: 162px;
+  height: 160px;
   justify-content: center;
   flex-wrap: wrap;
   gap: 7px;
