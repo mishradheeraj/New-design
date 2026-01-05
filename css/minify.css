@@ -71,11 +71,13 @@ body{
   top: 30%;
   transform: translateY(-30%);
   left: 20px;
+  max-width: 70px;
+  line-height: 20px;
 }
 .gradient_line {
   position: absolute;
   width: 23px;
-  height: 73px;
+  height: 77px;
   background: linear-gradient(
     90deg,
     #d9d9d9 16.93%,
@@ -84,24 +86,24 @@ body{
   );
 }
 .gradient_line--top-right {
-  top: 8%;
+  top: 10%;
   right: -12px;
-  transform: translateY(-8%);
+  transform: translateY(-10%);
 }
 .gradient_line--top-left {
-  top: 8%;
+  top: 10%;
   left: 0;
-  transform: translateY(-8%);
+  transform: translateY(-10%);
 }
 .gradient_line--bottom-left {
-  bottom: 5%;
+  bottom: 6%;
   left: 0;
-  transform: translateY(-5%);
+  transform: translateY(-6%);
 }
 .gradient_line--bottom-right {
-  bottom: 5%;
+  bottom: 6%;
   right: -12px;
-  transform: translateY(-5%);
+  transform: translateY(-6%);
 }
 .huawei_internal {
   width: 335px;
@@ -135,7 +137,7 @@ span.hwawey_shadow::after {
 }
 .huawey_right_box {
   left: 0;
-  height: 70px;
+  height: 78px;
   width: 47px;
   display: flex;
   align-items: center;
@@ -255,7 +257,7 @@ span.hwawey_shadow::after {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  background-color: var(--info-light);
+  background-color: var(--bg-rectangle);
   padding: 2px 6px;
   font-size: 0.9rem;
   width: max-content;
@@ -270,6 +272,30 @@ span.hwawey_shadow::after {
 .serial_no {
   top: 28%;
 }
+
+span.serial_no::after {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 1px;
+    background: var(--dark-bg);
+    top: 80%;
+    left: calc(100% + 10px);
+    border-radius: 50%;
+}
+
+span.mac_number::after {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 1px;
+    background: var(--dark-bg);
+    top: 80%;
+    left: calc(100% + 10px);
+    border-radius: 50%;
+}
+
+
 .mac_number {
   top: 45%;
 }
@@ -480,6 +506,13 @@ span.line-2 {
   gap: 12px;
   min-width: max-content;
 }
+
+/* ==== css code added ==== */
+  .classic_child_two{
+    margin-left: 8px;
+  }
+/* == code ends == */
+
 .device-type ul li {
   position: relative;
   padding-right: 24px;
